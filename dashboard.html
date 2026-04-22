@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PRONOTE - Emploi du Temps</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background: #f0f0f0; }
+        nav { background: #00605B; padding: 10px; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        
+        .container { padding: 20px; }
+        .timetable { 
+            display: grid; 
+            grid-template-columns: 100px repeat(5, 1fr); 
+            background: white; 
+            border: 1px solid #ccc;
+        }
+        .cell { border: 1px solid #eee; padding: 15px; min-height: 60px; text-align: center; }
+        .header-cell { background: #00605B; color: white; font-weight: bold; }
+        .subject { background: #e3f2fd; border-radius: 4px; padding: 5px; font-size: 0.9em; border-left: 5px solid #2196f3; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Emploi du temps</a>
+    <a href="notes.html">Notes</a>
+    <a href="index.html" style="margin-left:auto">Déconnexion</a>
+</nav>
+
+<div class="container">
+    <h2>Emploi du temps - Semaine A</h2>
+    <div class="timetable">
+        <div class="cell header-cell">Heure</div>
+        <div class="cell header-cell">Lundi</div>
+        <div class="cell header-cell">Mardi</div>
+        <div class="cell header-cell">Mercredi</div>
+        <div class="cell header-cell">Jeudi</div>
+        <div class="cell header-cell">Vendredi</div>
+
+        <div class="cell">08:00</div>
+        <div class="cell"><div class="subject">Mathématiques<br><small>Salle 204</small></div></div>
+        <div class="cell"><div class="subject">Français<br><small>Salle 102</small></div></div>
+        <div class="cell"></div>
+        <div class="cell"><div class="subject" style="border-left-color: #4caf50;">SVT<br><small>Labo 1</small></div></div>
+        <div class="cell"><div class="subject">Anglais<br><small>Salle 301</small></div></div>
+    </div>
+</div>
+
+</body>
+</html>
