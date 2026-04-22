@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRONOTE - Connexion</title>
+    <style>
+        /* Styles de base pour ressembler à l'interface classique */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Bandeau supérieur vert Pronote */
+        .header {
+            background-color: #00605B;
+            width: 100%;
+            padding: 15px 0;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Boîte de connexion */
+        .login-container {
+            background-color: white;
+            margin-top: 80px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 10px;
+        }
+
+        /* Champs de saisie */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Évite que le champ ne dépasse de la boîte */
+            font-size: 14px;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #00605B;
+        }
+
+        /* Bouton de validation */
+        .btn-submit {
+            background-color: #00605B;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #004d49;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        PRONOTE
+    </div>
+
+    <div class="login-container">
+        <h2>Espace Élèves</h2>
+        
+        <form action="dashboard.html" method="GET">
+            <div class="input-group">
+                <label for="username">Identifiant</label>
+                <input type="text" id="username" name="username" placeholder="Entrez votre identifiant" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            </div>
+            
+            <button type="submit" class="btn-submit">Se connecter</button>
+        </form>
+    </div>
+
+</body>
+</html>
