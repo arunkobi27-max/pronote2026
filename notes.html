@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PRONOTE - Mes Notes</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background: #f0f0f0; }
+        nav { background: #00605B; padding: 10px; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f8f9fa; color: #555; }
+        .grade { font-weight: bold; color: #00605B; }
+        .average { background: #e8f5e9; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Emploi du temps</a>
+    <a href="notes.html">Notes</a>
+    <a href="index.html" style="margin-left:auto">Déconnexion</a>
+</nav>
+
+<div class="container">
+    <h2>Dernières notes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Matière</th>
+                <th>Note /20</th>
+                <th>Moyenne classe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathématiques</td>
+                <td class="grade">16,5</td>
+                <td>12,4</td>
+            </tr>
+            <tr>
+                <td>Français</td>
+                <td class="grade">14,0</td>
+                <td>11,8</td>
+            </tr>
+            <tr>
+                <td>Histoire-Géo</td>
+                <td class="grade">18,0</td>
+                <td>13,2</td>
+            </tr>
+            <tr class="average">
+                <td>MOYENNE GÉNÉRALE</td>
+                <td>16,1</td>
+                <td>12,5</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
